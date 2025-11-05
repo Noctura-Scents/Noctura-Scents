@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ons product — Noctura Scents</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="favicon.ico">
+  <style> body { font-family: 'Georgia', serif; } </style>
+</head>
+<body class="bg-[#1a0f1a] text-[#F5F5F5] min-h-screen flex flex-col">
+
+  <header class="bg-transparent">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-6 text-[#E8D8C3]">
+      <div class="text-lg font-semibold text-[#F5F5DC]">Noctura Scents</div>
+      <ul class="hidden md:flex gap-6">
+        <li><a href="index.html" class="hover:underline">Startpagina</a></li>
+        <li><a href="overons.html" class="hover:underline">Over ons</a></li>
+        <li><a href="product.html" class="underline">Ons product</a></li>
+        <li><a href="prijzen.html" class="hover:underline">Prijzen</a></li>
+        <li><a href="extra.html" class="hover:underline">Extra informatie</a></li>
+      </ul>
+      <div class="md:hidden">
+        <button id="menuBtn3" class="text-[#E8D8C3]">Menu</button>
+      </div>
+    </nav>
+
+    <div id="mobileMenu3" class="hidden md:hidden bg-[#2a1830]">
+      <ul class="flex flex-col p-4 gap-3 text-[#E8D8C3]">
+        <li><a href="index.html">Startpagina</a></li>
+        <li><a href="overons.html">Over ons</a></li>
+        <li><a href="product.html">Ons product</a></li>
+        <li><a href="prijzen.html">Prijzen</a></li>
+        <li><a href="extra.html">Extra informatie</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-4xl text-[#F5F5DC] font-bold mb-6">Ons product</h2>
+    <p class="text-[#E8D8C3] mb-8">Wij verkopen geurstokjes in stijlvolle flesjes (60 ml). Hieronder vind je onze 8 vaste geuren en informatie over custom flesjes.</p>
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="bg-[#2a1830] p-6 rounded-lg shadow">
+        <h3 class="text-2xl text-[#F5F5DC] font-semibold mb-2">Musk &amp; Vanilla</h3>
+        <p class="text-[#DCCEC4]">Warm en zacht: een comfortabele, luxueuze basis met vanille-accenten.</p>
+      </article>
+
+      <article class="bg-[#2a1830] p-6 rounded-lg shadow">
+        <h3 class="text-2xl text-[#F5F5DC] font-semibold mb-2">Amber &amp; Ginger</h3>
+        <p class="text-[#DCCEC4]">Kruidig en warm met een sprankje pit dankzij gember.</p>
+      </article>
+
+      <article class="bg-[#2a1830] p-6 rounded-lg shadow">
+        <h3 class="text-2xl text-[#F5F5DC] font-semibold mb-2">Violet &amp; Sandalwood</h3>
+        <p class="text-[#DCCEC4]">Bloemig en houtachtig — elegant en rustgevend.</p>
+      </article>
+
+      <article class="bg-[#2a1830] p-6 rounded-lg shadow">
+        <h3 class="text-2xl text-[#F5F5DC] font-semibold mb-2">Vanilla &amp; Spice</h3>
+        <p class="text-[#DCCEC4]">Zoet en verwarmend met een vleugje specerij.</p>
+      </article>
+
+      <article class="bg-[#2a1830] p-6 rounded-lg shadow">
+        <h3 class="text-2xl text-[#F5F5DC] font-semibold mb-2">Amber Serenity</h3>
+        <p class="text-[#DCCEC4]">Zachte ambernoten voor een serene sfeer.</p>
+      </article>
+
+      <article class="bg-[#2a1830] p-6 rounded-lg shadow">
+        <h3 class="text-2xl text-[#F5F5DC] font-semibold mb-2">Rosewood Dream</h3>
+        <p class="text-[#DCCEC4]">Houtachtige roos — romantisch en warm.</p>
+      </article>
+
+      <article class="bg-[#2a1830] p-6 rounded-lg shadow">
+        <h3 class="text-2xl text-[#F5F5DC] font-semibold mb-2">Peaceful Woodland</h3>
+        <p class="text-[#DCCEC4]">Aards en groen, perfect voor ontspanning en balans.</p>
+      </article>
+
+      <article class="bg-[#2a1830] p-6 rounded-lg shadow">
+        <h3 class="text-2xl text-[#F5F5DC] font-semibold mb-2">Morning Blossom</h3>
+        <p class="text-[#DCCEC4]">Fris en bloemig — een zonnige start van de dag.</p>
+      </article>
+    </section>
+
+    <section class="mt-10 bg-[#241427] p-6 rounded-lg">
+      <h3 class="text-2xl text-[#F5F5DC] font-semibold mb-3">Custom flesjes</h3>
+      <p class="text-[#DCCEC4]">We bieden ook custom flesjes aan: je kunt een eigen label laten drukken met tekst, glitters toevoegen, of een kleurtje kiezen voor het flesje of de vloeistof. Ideaal voor cadeaus, speciale occasions of branding.</p>
+      <p class="text-[#DCCEC4] mt-3">Vraag naar de mogelijkheden — we denken graag mee over een persoonlijk ontwerp.</p>
+    </section>
+  </main>
+
+  <footer class="bg-[#2a1830] text-center py-6 text-sm text-[#CBBFB3]">
+    &copy; 2025 Noctura Scents
+  </footer>
+
+<script>
+  const menuBtn3 = document.getElementById('menuBtn3');
+  const mobileMenu3 = document.getElementById('mobileMenu3');
+  menuBtn3?.addEventListener('click', () => mobileMenu3.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>
