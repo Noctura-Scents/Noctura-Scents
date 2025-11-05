@@ -1,73 +1,61 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Prijzen — Noctura Scents</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prijzen – Noctura Scents</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="favicon.ico">
-  <style> body { font-family: 'Georgia', serif; } </style>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+    }
+  </style>
 </head>
-<body class="bg-[#1a0f1a] text-[#F5F5F5] min-h-screen flex flex-col">
+<body class="bg-[#3E244B] text-[#F5F5F5]">
 
-  <header class="bg-transparent">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between p-6 text-[#E8D8C3]">
-      <div class="text-lg font-semibold text-[#F5F5DC]">Noctura Scents</div>
-      <ul class="hidden md:flex gap-6">
-        <li><a href="index.html" class="hover:underline">Startpagina</a></li>
-        <li><a href="overons.html" class="hover:underline">Over ons</a></li>
-        <li><a href="product.html" class="hover:underline">Ons product</a></li>
-        <li><a href="prijzen.html" class="underline">Prijzen</a></li>
-        <li><a href="extra.html" class="hover:underline">Extra informatie</a></li>
-      </ul>
-      <div class="md:hidden">
-        <button id="menuBtn4" class="text-[#E8D8C3]">Menu</button>
-      </div>
+  <!-- Navigatie -->
+  <header class="flex justify-between items-center px-6 py-4 text-[#F5F5DC] bg-[#2C1A38]">
+    <h1 class="text-2xl font-semibold">Noctura Scents</h1>
+    <nav class="space-x-6 text-lg">
+      <a href="index.html" class="hover:underline">Startpagina</a>
+      <a href="overons.html" class="hover:underline">Over ons</a>
+      <a href="product.html" class="hover:underline">Ons product</a>
+      <a href="prijzen.html" class="hover:underline">Prijzen</a>
+      <a href="extra.html" class="hover:underline">Extra informatie</a>
     </nav>
-
-    <div id="mobileMenu4" class="hidden md:hidden bg-[#2a1830]">
-      <ul class="flex flex-col p-4 gap-3 text-[#E8D8C3]">
-        <li><a href="index.html">Startpagina</a></li>
-        <li><a href="overons.html">Over ons</a></li>
-        <li><a href="product.html">Ons product</a></li>
-        <li><a href="prijzen.html">Prijzen</a></li>
-        <li><a href="extra.html">Extra informatie</a></li>
-      </ul>
-    </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-6 py-12">
-    <h2 class="text-4xl text-[#F5F5DC] font-bold mb-6">Prijzen</h2>
+  <!-- Titel -->
+  <section class="text-center px-6 py-12">
+    <h2 class="text-4xl text-[#F5F5DC] font-bold mb-4">Prijzen</h2>
+    <p class="text-[#E8D8C3] max-w-xl mx-auto mb-8">
+      Onze geurstokjes zijn verkrijgbaar in verschillende varianten.  
+      Bekijk hieronder onze prijzen:
+    </p>
 
-    <div class="bg-[#241427] p-8 rounded-lg shadow space-y-6 text-[#E8D8C3]">
-      <div class="flex justify-between items-center">
-        <span class="text-lg">1 flesje</span>
-        <span class="text-2xl font-semibold">€ 6,00</span>
-      </div>
-
-      <div class="flex justify-between items-center">
-        <span class="text-lg">2 flesjes</span>
-        <span class="text-2xl font-semibold">€ 10,00</span>
-      </div>
-
-      <div class="flex justify-between items-center">
-        <span class="text-lg">Custom flesje</span>
-        <span class="text-2xl font-semibold">vanaf € 7,00</span>
-      </div>
+    <!-- Prijslijst -->
+    <div class="bg-[#4D325F] max-w-md mx-auto rounded-lg shadow-lg p-6 text-left text-[#F5F5DC]">
+      <ul class="space-y-2 text-lg">
+        <li>• 1 flesje – €6,00</li>
+        <li>• 2 flesjes – €10,00</li>
+        <li>• Custom flesje – vanaf €7,00</li>
+      </ul>
     </div>
 
-    <p class="text-[#DCCEC4] mt-6">Alle flesjes zijn 60 ml en worden stijlvol verpakt — ideaal als cadeautje of voor je eigen interieur.</p>
-  </main>
+    <!-- Contacttekst -->
+    <p class="text-[#E8D8C3] mt-8 max-w-xl mx-auto text-lg">
+      Heeft u interesse in een flesje?  
+      Stuur dan een mailtje naar  
+      <a href="mailto:thirzaven11@gmail.com" class="underline text-[#F5F5DC] hover:text-white">thirzaven11@gmail.com</a>  
+      of een appje naar  
+      <a href="tel:0615566282" class="underline text-[#F5F5DC] hover:text-white">06 15566282</a>.
+    </p>
+  </section>
 
-  <footer class="bg-[#2a1830] text-center py-6 text-sm text-[#CBBFB3]">
-    &copy; 2025 Noctura Scents
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-[#CBBFB3] bg-[#2C1A38]">
+    &copy; 2025 Noctura Scents – Een betovering in elke druppel
   </footer>
-
-<script>
-  const menuBtn4 = document.getElementById('menuBtn4');
-  const mobileMenu4 = document.getElementById('menuBtn4');
-  menuBtn4?.addEventListener('click', () => document.getElementById('mobileMenu4').classList.toggle('hidden'));
-</script>
 
 </body>
 </html>
